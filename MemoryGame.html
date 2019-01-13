@@ -10,44 +10,47 @@
     <script src="MemoryGame.js"></script>
 </head>
 <body>
-    <header><div id="title"></h1>Let's play a memory game!</div> 
-
-        <span class='submit'>Start!</span>
+    <header>
+        <div class='headerText' id="title">Let's play a memory game!</div> 
+        <div class='submit' id='submit'>Start!</div>
     </header>
 
     <div class="game">
-        <div class="row">
-            <div class="column">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">                
+        <div class="leftcolumn">
+            <div id="currentScore">Current Score: 0</div>
+            <div class='submit' id='newGame'>Start a New Game</div>
+        </div>
+        <div class="rightcolumn">
+            <div class="row">
+                <img src="the-little-prince back.jpg" alt="" id="1">
+                <img src="the-little-prince back.jpg" alt="" id="2">
+                <img src="the-little-prince back.jpg" alt="" id="3"> 
+                <img src="the-little-prince back.jpg" alt="" id="4">
+                <img src="the-little-prince back.jpg" alt="" id="5">
+                <img src="the-little-prince back.jpg" alt="" id="6">                
             </div>
-            <div class="column">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
+            <div class="row">
+                <img src="the-little-prince back.jpg" alt="" id="7">
+                <img src="the-little-prince back.jpg" alt="" id="8">
+                <img src="the-little-prince back.jpg" alt="" id="9">
+                <img src="the-little-prince back.jpg" alt="" id="10">
+                <img src="the-little-prince back.jpg" alt="" id="11">
+                <img src="the-little-prince back.jpg" alt="" id="12">  
             </div>
-            <div class="column">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-            </div>
-            <div class="column">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-            </div>
-            <div class="column">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-            </div>
-            <div class="column">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
-                <img src="the-little-prince back.jpg" alt="">
+            <div class="row">
+                <img src="the-little-prince back.jpg" alt="" id="13">
+                <img src="the-little-prince back.jpg" alt="" id="14">
+                <img src="the-little-prince back.jpg" alt="" id="15">
+                <img src="the-little-prince back.jpg" alt="" id="16">
+                <img src="the-little-prince back.jpg" alt="" id="17">
+                <img src="the-little-prince back.jpg" alt="" id="18">  
             </div>
         </div>
+    </div>
+    <div class="finishPage">
+        <div class='headerText'>Congratulations!</div>
+        <div id="finalScore">You finished in steps.</div>
+        <div class='submit' id='newGameAtEnd'>Start a New Game</div>
     </div>
 
 </body>

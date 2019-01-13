@@ -1,15 +1,27 @@
 header{
-    padding: 20px;
+    display: flex;
+    margin: 25px;
+    padding: 136px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #335a99;
+    background-repeat: no-repeat;
+    background-image: url("no background.png");
+    background-size: 30%;
+    background-position: right bottom;
 }
 
-#title{
+
+.headerText{
+    width: 100%;
     font-family: "Covered By Your Grace", "Comic Sans MS", cursive, sans-serif;
     font-size: 40px;
     text-align: center;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    background-color: #d9e4d9;
+    padding-bottom: 150px;
+    padding-top: 150px;
     border-radius: 30px;
+    color: #f4bd59;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .submit{
@@ -21,27 +33,59 @@ header{
     font-family: "Comic Sans MS";
     cursor: pointer;
     border: 1px solid black;
-    display: inline-block;
-
+    align-content: center;
 }
 
 .submit:hover{
     background-color: #bdbd68;
 }
 
+.game{
+    margin: 24px;
+    display: flex;
+    width: 100%;
+}
+
+.leftcolumn{
+    font-family: "Comic Sans MS";
+    width: 137px;
+}
+.rightcolumn {
+    display: flex;
+    /* height: 100%; */
+    flex-direction: column;
+    flex: 77%;
+}
+  
 .row {
     display: flex;
-    padding: 0 4px;
-    width: 100%;
+    flex: 30%;
+    height: 220px;
+    justify-content: center;
+    padding: 4px;
 }
   
-.column {
-    flex: 12%;
-    padding: 0 4px;
-}
-  
-.column img {
-    margin-top: 8px;
+.row img {
     vertical-align: middle;
+    height: 100%;
+    width: auto;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.finishPage{
+    display: flex;
+    margin: 25px;
+    padding: 132px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #335a99;
+    font-family: "Comic Sans MS";
+
+}
+
+#finalScore{
     width: 100%;
+    color: white;
+    text-align: center;
 }
