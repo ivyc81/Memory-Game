@@ -9,10 +9,12 @@ document.addEventListener("DOMContentLoaded", function(){
         window.location.reload(true);
     });
 
-    var restartButton = document.querySelector("#newGameAtEnd");
-    restartButton.addEventListener("click", function(){
-        window.scrollTo({left: 0,top: document.querySelector(".game").scrollHeight , behavior: 'smooth'});
-        window.location.reload(true);
+    var newGameButton = document.querySelector("#newGameAtEnd");
+    newGameButton.addEventListener("click", function(){
+        window.scrollTo({left: 0,top: document.querySelector(".game").scrollHeight + 10, behavior: 'smooth'});
+        setTimeout(function(){
+            window.location.reload(true);    
+        },300);
     });
 
     newSources = dealCards();
@@ -76,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     photoToFlipBack[0].setAttribute("src", "the-little-prince back.jpg")
                     setNewSource.setAttribute("src", "the-little-prince back.jpg");
                     photoToFlipBack.splice(0,photoToFlipBack.length);
-                },2000);
+                },1500);
             }
         } 
     }, false);
