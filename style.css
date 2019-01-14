@@ -57,6 +57,10 @@ header{
     flex: 77%;
 }
   
+#highestScore{
+    color:grey;
+    font-size: 10pt;
+}
 .row {
     display: flex;
     flex: 30%;
